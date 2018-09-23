@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+		    <link rel="stylesheet" href="css/framework7.ios.min.css">
+		    <link rel="stylesheet" href="css/framework7-icons.css">
+			  <link rel="stylesheet" href="http://abpetkov.github.io/powerange/stylesheets/demo.css" />
+  <link rel="stylesheet" href="css/powerange.css" />
+	
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+	
+	<style>
+	
+	.button
+	{
+	    padding: 2px 32px !important;
+	}
+	.slider-wrapper
+	{
+width: 77% !important;
+	}
+	.mima
+	{
+     padding: 4px 18px;
+    background: #ffffffd1;
+    margin: 16px 11px;
+    border-radius: 7px;
+	}
+	
+	.content-block-title
+	{
+	margin: 24px 3px 11px !important;
+	}
+	
+	.page-content
+	{
+
+	background-image:url('bg.jpg');
+	background-size:100%;
+	}
+	
+	.range-quantity {
+    background-color: #304596 !important;
+}
+	
+	.list-block ul
+	{
+	background:transparent;
+	}
+	
+	
+	.boldx
+	{
+	font-weight:bold;
+	color:#ac791e;
+	}
+	
+	.item-media .f7-icons, .item-media .framework7-icons {
+    font-size: 23px;
+}
+	</style>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+ <div style="width: 120px;margin-top: 15px;margin-left:auto;margin-right:auto;background: #ffffffe6;height: 120px;">
+<img src="logo3.png" class="" style="
+    width: 120px;
+">
+</div>
+                     
+                     <div class = "list-block media-list inset">
+                        <ul>
+                           <li>
+                              <a href = "accueil.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/menu.png" width = "25px"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Accueil</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+                           
+                           <li>
+                              <a href = "myaccount.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/user.png" width = "25px"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Mon Compte</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+                           
+                          
+						   
+						          <li>
+                              <a href = "compte33.html" onclick="myApp.closePanel();location.href='compte33.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/money.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Mes revenus</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
+						          <li>
+                              <a href = "compte55.html" onclick="myApp.closePanel();location.href='compte55.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/patrimoine.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Gestion Patrimoine</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   		          <li>
+                              <a href = "#" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/bars.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Reporting</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   <li>
+                              <a href = "apropos.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/info.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">A Propos</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						       <li>
+                              <a href = "conditions.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/list.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Conditions générales</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+					
+						   
+						          <li>
+                              <a href = "index.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/logout.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Déconnexion</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+                        </ul>
+                     </div>
+    </div>
+    <!-- Right panel with cover effect-->
+ 
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+	
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+<div class="left" style="">
+<a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
+	  <div class="item-media"  ><i style="color:white;margin-right:8px" class="icon f7-icons">left</i></div>
+<span class="ios-only" style="color:white">Back</span>
+</a>
+</div>
+            <div style="font-weight:bold;" class="center sliding">COACH RETRAITE</div>
+          
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+
+<div style="width: 50px;margin-top: 16px;margin-left:auto;margin-right:auto;background: #ffffffe6;padding: 15px;height: 50px;border-radius: 100%;" class="">
+<img src="logo.png" class="" style="
+    width: 50px;
+">
+</div>
+<div class="list-block mima">
+ <div class="content-block-title boldx">Création de compte (Suite ...)</div>
+
+
+
+<div class="slider-wrapper" style="
+    margin: 23px;
+">
+<div style="
+   width: 105%;
+    font-weight: bold;
+    /* float: left; */
+    color: #2d2d2d;
+    font-size: 13px;
+    padding: 22px 10px;
+">REVENUS ANNUELS BRUTS (12 MOIS)</div>
+<input type="text" class="js-decimal" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v1">0</div>
+          </div>
+		  
+		  
+		  
+<div class="slider-wrapper" style="margin: 23px;margin-top:55px;border-top:1px solid white;">
+<div style="
+ width: 105%;
+    font-weight: bold;
+    /* float: left; */
+    color: #2d2d2d;
+    font-size: 13px;
+    padding: 22px 10px;
+">REVENUS ANNUELS VARIABLE (12 MOIS)</div>
+<input type="text" class="js-decimal2" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v2">0</div>
+          </div>
+		  
+		  
+		  <div class="slider-wrapper" style="margin: 23px;margin-top:55px;border-top:1px solid white;">
+<div style="
+width: 105%;
+    font-weight: bold;
+    /* float: left; */
+    color: #2d2d2d;
+    font-size: 13px;
+    padding: 22px 10px;
+">IMPÔT SUR LE REVENU 31.12.2016</div>
+<input type="text" class="js-decimal3" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v3">0</div>
+          </div>
+		  
+		  <div style="text-align:center;padding:10px;">
+<a href="compte4.html" style="width: 94%;margin: 3%;" class="col button button-big button-fill color-blue">Suivant</a>
+</div>
+
+</div>
+
+
+    
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+
+  <script type="text/javascript" src="js/framework7.js"></script>
+	    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+		<script>
+
+	var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+ 
+var calendarDisabled = myApp.calendar({
+    input: '#calendar-default',
+    dateFormat: 'M dd yyyy',
+
+});
+
+$('#price-filter').on('range:change', function (e, range) {
+alert('rrrr');
+  //$$('.price-value').text('$'+(range.value[0])+' - $'+(range.value[1]));
+});
+
+	</script>
+	
+	  <script src="js/powerange.min.js"></script>
+  <script type="text/javascript">
+
+    // Basic customization.
+var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: true, callback: displayDecimalValue, max: 10000, start: 2000 });
+
+
+    function displayDecimalValue() {
+      document.getElementById('v1').innerHTML = dec.value+'€';
+    }
+	
+	var dec2 = document.querySelector('.js-decimal2');
+    var initDec2 = new Powerange(dec2, { decimal: true, callback: displayDecimalValue2, max: 10000, start: 3000 });
+
+
+    function displayDecimalValue2() {
+      document.getElementById('v2').innerHTML = dec2.value+'€';
+    }
+	
+	
+	
+		var dec3 = document.querySelector('.js-decimal3');
+    var initDec3 = new Powerange(dec3, { decimal: true, callback: displayDecimalValue3, max: 10000, start: 4000 });
+
+
+    function displayDecimalValue3() {
+      document.getElementById('v3').innerHTML = dec3.value+'€';
+    }
+	
+	
+	
+	
+
+  </script>
+  </body>
+</html>

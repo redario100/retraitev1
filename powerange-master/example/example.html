@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Powerange - iOS 7 style range slider</title>
+  <link rel="stylesheet" href="http://abpetkov.github.io/powerange/stylesheets/demo.css" />
+  <link rel="stylesheet" href="../dist/powerange.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="slider-wrapper">
+	        <div id="js-display-decimal" class="display-box"></div>
+            <input type="text" class="js-decimal" />
+          </div>
+
+</div>
+
+  <script src="../dist/powerange.min.js"></script>
+  <script type="text/javascript">
+
+    // Basic customization.
+var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: true, callback: displayDecimalValue, max: 10000, start: 0 });
+
+
+    function displayDecimalValue() {
+      document.getElementById('js-display-decimal').innerHTML = dec.value;
+    }
+
+  </script>
+</body>
+</html>
