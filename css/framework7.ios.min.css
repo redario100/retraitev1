@@ -74,6 +74,61 @@ padding: 6px 5px !important;
 	}
 	
 	
+		.mima
+	{
+	padding: 1px 25px;
+    background: #ffffffe0;
+    margin: 20px 10px;
+    border-radius: 12px;
+	}
+	
+	.content-block-title
+	{
+	margin: 24px 3px 11px !important;
+	}
+	
+	.page-content
+	{
+	background-image:url('bg.jpg') !important;
+	background-size:cover !important;
+	}
+
+	.button
+	{
+	    padding: 2px 32px !important;
+	}
+	.slider-wrapper
+	{
+width: 77% !important;
+	}
+	
+	
+		
+		.row
+	{
+	margin:5px 0px !important;
+	}  
+	
+	.slider-wrapper
+	{
+width: 77% !important;
+	}
+	
+	.range-quantity {
+    background-color: #304596 !important;
+}
+	
+	.list-block ul
+	{
+	background:transparent;
+	}
+	
+	.boldx
+	{
+	font-weight:bold;
+	color:#ac791e;
+	}
+	
 .block .col {
     font-size: 12px;
 }
