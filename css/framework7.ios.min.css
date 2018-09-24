@@ -106,7 +106,12 @@ padding: 6px 5px !important;
 	.page-content
 	{
 	background-image:url('../bg.jpg') !important;
-	background-size:cover !important;
+height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 
 	.button
