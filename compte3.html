@@ -9,14 +9,21 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
-			  <link rel="stylesheet" href="http://abpetkov.github.io/powerange/stylesheets/demo.css" />
+			  <link rel="stylesheet" href="css/demo.css" />
   <link rel="stylesheet" href="css/powerange.css" />
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-
+	
+	<style>
+	.range-bar
+	{
+	width:120% !important;
+	}
+	</style>
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -25,16 +32,16 @@
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
- <div style="width: 100px;margin-top: 60px;margin-left:auto;margin-right:auto;">
+  <div style="width: 120px;margin-top: 10px;margin-left:auto;margin-right:auto;">
 <img src="logo3.png" class="" style="
-    width: 100px;
+    width: 120px;
 ">
 </div>
                      
                      <div class = "list-block media-list inset">
                         <ul>
                            <li>
-                              <a href = "accueil.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                              <a href = "#" onclick="myApp.closePanel()" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/menu.png" width = "25px"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -73,7 +80,7 @@
 						   
 						   
 						          <li>
-                              <a href = "compte55.html" onclick="myApp.closePanel();location.href='compte55.html'" class = "item-link item-content">
+                              <a href = "patrimoine.html" onclick="myApp.closePanel();" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/patrimoine.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -84,8 +91,33 @@
                               </a>
                            </li>
 						   
+						   <li>
+                              <a href = "risque.html" onclick="myApp.closePanel();location.href='risque.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/risk.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Appétit Risque</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
+						    <li>
+                              <a href = "budget-mensuel.html" onclick="myApp.closePanel();location.href='budget-mensuel.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/retraite.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Budget Retraite</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
 						   		          <li>
-                              <a href = "#" class = "item-link item-content">
+                              <a href = "stats.html" onclick="myApp.closePanel();location.href='stats.html'" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/bars.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -148,8 +180,8 @@
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
 <div class="left" style="">
-<a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
-	  <div class="item-media"  ><i style="color:white;margin-right:8px" class="icon f7-icons">left</i></div>
+<a href = "accueil.html" onclick="myApp.closePanel();location.href='accueil.html'" class="link back">
+<div class="item-media"><i style="color:white;margin-right:8px" class="icon f7-icons">left</i></div>
 <span class="ios-only" style="color:white">Back</span>
 </a>
 </div>
@@ -164,61 +196,34 @@
             <!-- Scrollable page content-->
             <div class="page-content">
 
-<div style="width: 85px;margin-top: 20px;margin-left:auto;margin-right:auto;">
-<img src="logo.png" class="" style="
-    width: 85px;
-">
-</div>
+<div class="card">
+  <div class="card-header"> <div style="font-size:13px" class = "item-media">Mes Revenus</div> </div>
+  <div style="text-align:left;" class="card-content card-content-padding">
+
 <div class="list-block mima">
- <div class="content-block-title boldx">Création de compte (Suite ...)</div>
 
-
-
-<div class="slider-wrapper" style="
-    margin: 23px;
-">
-<div style="
-   width: 105%;
-    font-weight: bold;
-    /* float: left; */
-    color: #2d2d2d;
-    font-size: 13px;
-    padding: 22px 10px;
-">REVENUS ANNUELS BRUTS (12 MOIS)</div>
+<div class="slider-wrapper" >
+<div class="titre-risque">REVENUS ANNUELS BRUTS (12 MOIS)</div>
 <input type="text" class="js-decimal" />
 
-<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v1">0</div>
+<div style="float:left;width:100%;text-align:center;padding:20px 10px 40px 16px;font-weight:bold;font-size:16px;" id="v1">0</div>
           </div>
 		  
 		  
 		  
-<div class="slider-wrapper" style="margin: 23px;margin-top:55px;border-top:1px solid white;">
-<div style="
- width: 105%;
-    font-weight: bold;
-    /* float: left; */
-    color: #2d2d2d;
-    font-size: 13px;
-    padding: 22px 10px;
-">REVENUS ANNUELS VARIABLE (12 MOIS)</div>
+<div class="slider-wrapper">
+<div class="titre-risque">REVENUS ANNUELS VARIABLE (12 MOIS)</div>
 <input type="text" class="js-decimal2" />
 
-<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v2">0</div>
+<div style="float:left;width:100%;text-align:center;padding:20px 10px 40px 16px;font-weight:bold;font-size:16px;" id="v2">0</div>
           </div>
 		  
 		  
-		  <div class="slider-wrapper" style="margin: 23px;margin-top:55px;border-top:1px solid white;">
-<div style="
-width: 105%;
-    font-weight: bold;
-    /* float: left; */
-    color: #2d2d2d;
-    font-size: 13px;
-    padding: 22px 10px;
-">IMPÔT SUR LE REVENU 31.12.2016</div>
+		  <div class="slider-wrapper">
+<div class="titre-risque">IMPÔT SUR LE REVENU 31.12.2016</div>
 <input type="text" class="js-decimal3" />
 
-<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v3">0</div>
+<div style="float:left;width:100%;text-align:center;padding:20px 10px 40px 16px;font-weight:bold;font-size:16px;" id="v3">0</div>
           </div>
 		  
 		  <div style="text-align:center;padding:10px;">
@@ -228,7 +233,8 @@ width: 105%;
 </div>
 
 
-    
+   
+  </div> </div> 
             </div>
           </div>
         </div>
@@ -253,10 +259,6 @@ var calendarDisabled = myApp.calendar({
 
 });
 
-$('#price-filter').on('range:change', function (e, range) {
-alert('rrrr');
-  //$$('.price-value').text('$'+(range.value[0])+' - $'+(range.value[1]));
-});
 
 	</script>
 	
@@ -265,7 +267,7 @@ alert('rrrr');
 
     // Basic customization.
 var dec = document.querySelector('.js-decimal');
-    var initDec = new Powerange(dec, { decimal: true, callback: displayDecimalValue, max: 10000, start: 2000 });
+    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 10000, start: 2000 });
 
 
     function displayDecimalValue() {
@@ -273,7 +275,7 @@ var dec = document.querySelector('.js-decimal');
     }
 	
 	var dec2 = document.querySelector('.js-decimal2');
-    var initDec2 = new Powerange(dec2, { decimal: true, callback: displayDecimalValue2, max: 10000, start: 3000 });
+    var initDec2 = new Powerange(dec2, { decimal: false, callback: displayDecimalValue2, max: 10000, start: 3000 });
 
 
     function displayDecimalValue2() {
@@ -283,7 +285,7 @@ var dec = document.querySelector('.js-decimal');
 	
 	
 		var dec3 = document.querySelector('.js-decimal3');
-    var initDec3 = new Powerange(dec3, { decimal: true, callback: displayDecimalValue3, max: 10000, start: 4000 });
+    var initDec3 = new Powerange(dec3, { decimal: false, callback: displayDecimalValue3, max: 10000, start: 4000 });
 
 
     function displayDecimalValue3() {

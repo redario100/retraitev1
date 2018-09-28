@@ -9,15 +9,66 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+	    <link rel="stylesheet" href="css/framework7.min.css">
+			    <link rel="stylesheet" href="css/framework7.ios.min.css">
 
-		    <link rel="stylesheet" href="css/framework7.ios.min.css">
+
 		    <link rel="stylesheet" href="css/framework7-icons.css">
-	
+			  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/powerange.css" />
+	<style>
+#chart_div{
+   zoom:1.5;
+   width:130% !important;
+   height:20% !important;
+        margin-left:-7%;
+  padding:0px !important;
+
+}
+
+text {
+    font-size: 7px;
+}
+
+
+
+
+
+.row {
+  margin:0 !important;
+}
+	</style>
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
 	
-	
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Capital'],
+		  
+          [ '2034',      45000],
+          [ '2035',      32000],
+          [ '2036',     30000]
+        ]);
+
+        var options = {
+          title: '',
+          hAxis: {title: 'Date', minValue: 2017, maxValue: 2041},
+          vAxis: {title: 'Capital', minValue: 5000, maxValue: 50000},
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+	
+	
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -163,11 +214,7 @@
                      </div>
     </div>
     <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
+ 
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
@@ -178,8 +225,8 @@
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
 <div class="left" style="">
-<a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
-	  <div class="item-media"  ><i style="color:white;margin-right:8px" class="icon f7-icons">left</i></div>
+<a href="stats.html" onclick="location.href='stats.html'" class="link back">
+	  <div class="item-media"  ><i style="color:white;margin-right:8px;margin-top: 10px !important;" class="icon f7-icons">left</i></div>
 <span class="ios-only" style="color:white">Back</span>
 </a>
 </div>
@@ -190,143 +237,82 @@
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
-          <div data-page="somepage" class="page">
+          <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content">
-<div style="width: 85px;margin-top: 20px;margin-left:auto;margin-right:auto;">
-<img src="logo.png" class="" style="
-    width: 85px;
-">
-</div>
-
+<div class="page-content">
 <div class="list-block mima">
- <div class="content-block-title boldx">Créer un compte</div>
-  <ul>
-  
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">person</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Xavier Jerome" class="">
-</div>
-</div>
-</div>
-</li>
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">email</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="email" value="xavier.jerome@gmail.com" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">lock</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="password" value="*****" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">calendar</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="12/08/1975" onclick="pip()" readonly="" id="calendar-default" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">folder</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="19820012" id="nss" class="">
-</div>
-</div>
-</div>
-</li>
-
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">at</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Rue la paix Imm 5 N°10" id="ap" class="">
-</div>
-</div>
-</div>
-</li>
-
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">phone</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="0622521014" id="ap1" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">card</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="9712 2541 8745 0125" id="ap2" class="">
-</div>
-</div>
-</div>
-</li>
-
+<div class="card">
+<div class="card-header"> <div style="font-size:13px" class = "item-media">ALLOCATION D’ACTIFS RETRAITE</div> </div>
+<div style="font-size:14px;margin-top:-33px;margin-left: -8px;text-align:justify;" class="card-content card-content-padding">
 
 <div style="text-align:center;padding:10px;border-top:1px solid white;">
-
-    <a href="compte2.html" style="width:100%" class="col button button-big button-fill color-blue">Valider</a>
+  <div class="col-md-6">
+<div id="chart_div" ></div>
 </div>
-  </ul>
-</div>
-    
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
+<div class="block">
+<div style="margin: 4px !important;" class="row">
+    <div style="width:40%" class="col">Capital</div>
+    <div class="tik">9 600€</div>
+  </div>
+  
+  
+  <div style="margin: 4px !important;" class="row">
+    <div style="width:40%" class="col">SORTIE EN RENTE</div>
+    <div class="tik">70%</div>
+  </div>
+  
+  
+  
+  </div>
+</div>
+
+
+		  <div style="text-align:center;padding:10px;">
+<a href="stats3.html" onclick="location.href='stats3.html'" style="width: 94%;margin: 3%;font-size: 12px;" class="col button button-big button-fill color-blue">AUGMENTATION ÉPARGNE RECOMMANDÉE</a>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
     <!-- Path to Framework7 Library JS-->
 
+  <script type="text/javascript" src="js/framework7.js"></script>
 
-	  <script type="text/javascript" src="js/framework7.js"></script>
-	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-				<script>
-$$(document).on('page:init', function (e, page) {
-  console.log(page);
+		<script>
+var swiper = myApp.swiper.create('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100
+})
+
+
+	var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+ 
+var calendarDisabled = myApp.calendar({
+    input: '#calendar-default',
+    dateFormat: 'M dd yyyy',
+
 });
 
 
-
-
-
-
-
-
 	</script>
+	
+	  
   </body>
 </html>

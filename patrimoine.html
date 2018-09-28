@@ -9,15 +9,73 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-
+	
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
+			  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/powerange.css" />
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
 	
+	<style>
 	
+	
+	.tik
+	{
+	text-align: right !important;
+    background: #304596 !important;
+    color: white !important;
+	font-size:12px !important;
+    padding: 2px 8px !important;
+    border-radius: 16px !important;
+	}
+	
+	
+	.row
+	{
+	margin:5px 0px !important;
+	}
+	.slider-wrapper
+	{
+    width: 77% !important;
+	}
 
+	
+	.content-block-title
+	{
+	margin: 24px 3px 11px !important;
+	}
+	
+	.page-content
+	{
+
+	background-image:url('bg.jpg') !important;
+	background-size:100% !important;
+	}
+	
+	.range-quantity {
+    background-color: #304596 !important;
+}
+	
+	.list-block ul
+	{
+	background:transparent !important;
+	}
+	
+	i.icon.f7-icons {
+    height: 22px !important;
+}
+	.boldx
+	{
+	font-weight:bold !important;
+	color:#ac791e !important;
+	}
+	
+	.item-media .f7-icons, .item-media .framework7-icons {
+    font-size: 23px !important;
+}
+	</style>
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -163,11 +221,7 @@
                      </div>
     </div>
     <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
+ 
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
@@ -190,143 +244,143 @@
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
-          <div data-page="somepage" class="page">
+          <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content">
-<div style="width: 85px;margin-top: 20px;margin-left:auto;margin-right:auto;">
-<img src="logo.png" class="" style="
-    width: 85px;
-">
+            <div style="margin-top: 10px;" class="page-content">
+			 <div style="padding: 4% 2% 2% 3%;font-size:14px;" class="titre-risque">GESTION PATRIMOINE</div>
+<a href = "compte5.html" class = "item-link">
+<div class="list-block bikox">
+
+<div class="block kiko">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/retirement.png" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
+</div>
+</div>
+	       <div class="titreapp" >Retraite</div>
+</div></a>
+
+<a href = "compte6.html" class = "item-link"><div class="list-block bikox">
+<div class="block kiko">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/piggy.png" width = "100%"></div>
+                               
+                                
+                                 
+                           
+                          
+                            </div>
+
+</div>
+</div>
+       <div class="titreapp" >Autres Projets</div>
+</div>  </a>
+
+	
+<a class="item-link" href="choix.html" ><div class="list-block bikox">
+<div class="block kiko">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/debt.png" width = "100%"></div>
+                               
+                                  
+                                 
+                           
+                          
+                              </div>
+
+</div>
+</div>
+     <div class="titreapp" >Total</div>
 </div>
 
-<div class="list-block mima">
- <div class="content-block-title boldx">Créer un compte</div>
-  <ul>
-  
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">person</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Xavier Jerome" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">email</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="email" value="xavier.jerome@gmail.com" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">lock</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="password" value="*****" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">calendar</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="12/08/1975" onclick="pip()" readonly="" id="calendar-default" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">folder</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="19820012" id="nss" class="">
-</div>
-</div>
-</div>
-</li>
+</a>
 
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">at</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Rue la paix Imm 5 N°10" id="ap" class="">
-</div>
-</div>
-</div>
-</li>
 
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">phone</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="0622521014" id="ap1" class="">
-</div>
-</div>
-</div>
-</li>
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">card</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="9712 2541 8745 0125" id="ap2" class="">
-</div>
-</div>
-</div>
-</li>
-
-
-<div style="text-align:center;padding:10px;border-top:1px solid white;">
-
-    <a href="compte2.html" style="width:100%" class="col button button-big button-fill color-blue">Valider</a>
-</div>
-  </ul>
-</div>
-    
             </div>
+
           </div>
+		  
+		  
         </div>
 
       </div>
+	  
     </div>
     <!-- Path to Framework7 Library JS-->
 
 
-	  <script type="text/javascript" src="js/framework7.js"></script>
 	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-				<script>
-$$(document).on('page:init', function (e, page) {
-  console.log(page);
+		<script>
+
+
+
+
+	var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+ 
+var calendarDisabled = myApp.calendar({
+    input: '#calendar-default',
+    dateFormat: 'M dd yyyy',
+
 });
 
-
-
-
-
-
-
+$('#price-filter').on('range:change', function (e, range) {
+alert('rrrr');
+  //$$('.price-value').text('$'+(range.value[0])+' - $'+(range.value[1]));
+});
 
 	</script>
+	
+	  <script src="js/powerange.min.js"></script>
+  <script type="text/javascript">
+
+    // Basic customization.
+var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: true, callback: displayDecimalValue, max: 10000, start: 2000 });
+
+
+    function displayDecimalValue() {
+      document.getElementById('v1').innerHTML = dec.value+'€';
+    }
+	
+	var dec2 = document.querySelector('.js-decimal2');
+    var initDec2 = new Powerange(dec2, { decimal: true, callback: displayDecimalValue2, max: 10000, start: 3000 });
+
+
+    function displayDecimalValue2() {
+      document.getElementById('v2').innerHTML = dec2.value+'€';
+    }
+	
+	
+	
+		var dec3 = document.querySelector('.js-decimal3');
+    var initDec3 = new Powerange(dec3, { decimal: true, callback: displayDecimalValue3, max: 10000, start: 4000 });
+
+
+    function displayDecimalValue3() {
+      document.getElementById('v3').innerHTML = dec3.value+'€';
+    }
+	
+	
+
+
+  </script>
   </body>
 </html>

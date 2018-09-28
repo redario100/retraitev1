@@ -12,11 +12,11 @@
 
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
+			  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/powerange.css" />
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-	
-	
 
   </head>
   <body>
@@ -163,11 +163,7 @@
                      </div>
     </div>
     <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
+ 
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
@@ -178,7 +174,7 @@
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
 <div class="left" style="">
-<a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
+<a href="accueil.html" class="link back">
 	  <div class="item-media"  ><i style="color:white;margin-right:8px" class="icon f7-icons">left</i></div>
 <span class="ios-only" style="color:white">Back</span>
 </a>
@@ -190,143 +186,170 @@
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
           <!-- Page, data-page contains page name-->
-          <div data-page="somepage" class="page">
+          <div data-page="index" class="page">
             <!-- Scrollable page content-->
             <div class="page-content">
-<div style="width: 85px;margin-top: 20px;margin-left:auto;margin-right:auto;">
-<img src="logo.png" class="" style="
-    width: 85px;
-">
-</div>
+
 
 <div class="list-block mima">
- <div class="content-block-title boldx">Créer un compte</div>
-  <ul>
-  
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">person</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Xavier Jerome" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">email</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="email" value="xavier.jerome@gmail.com" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">lock</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="password" value="*****" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">calendar</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="12/08/1975" onclick="pip()" readonly="" id="calendar-default" class="">
-</div>
-</div>
-</div>
-</li>
-
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">folder</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="19820012" id="nss" class="">
-</div>
-</div>
-</div>
-</li>
+ <div class="card">
+  <div class="card-header"> <div style="font-size:13px" class = "item-media">APPÉTIT POUR LE RISQUE</div> </div>
+  <div style="font-size:28px;padding:10px;text-align:justify;" class="card-content card-content-padding">
 
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">at</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="Rue la paix Imm 5 N°10" id="ap" class="">
-</div>
-</div>
-</div>
-</li>
 
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">phone</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="0622521014" id="ap1" class="">
-</div>
-</div>
-</div>
-</li>
 
-<li>
-<div class="item-content">
-<div class="item-media"><i class="icon f7-icons">card</i></div>
-<div class="item-inner">
-<div class="item-input">
-<input type="text" value="9712 2541 8745 0125" id="ap2" class="">
-</div>
-</div>
-</div>
-</li>
+<div class="slider-wrapper">
+<div class="titre-risque">PERTE EXCESSIVE</div>
+<input type="text" class="js-decimal" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v1">0</div>
+          </div>
+		  
+		  
+		  
+<div class="slider-wrapper" >
+<div class="titre-risque">INSATISFACTION</div>
+<input type="text" class="js-decimal2" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v2">0</div>
+          </div>
+		  
+		  
+		  <div class="slider-wrapper" >
+<div class="titre-risque">RENTABILITÉ CIBLÉE</div>
+<input type="text" class="js-decimal3" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v3">0</div>
+          </div>
+		  
+		  
+			  <div class="slider-wrapper" >  
+			  <div class="titre-risque">RÉACTION AU GAIN</div>
+
+<p style="margin: 0px 0 26px 0px !important;" class="buttons-row theme-blue">
+    <a href="#" style="padding: 0 !important;" onclick="actif('p1','p2','p3')" id="p1" class="button button-active">Augmenter</a>
+    <a href="#" style="padding: 0 !important;"  onclick="actif('p2','p1','p3')" id="p2" class="button">Inchanger</a>
+	    <a href="#" style="padding: 0 !important;"  onclick="actif('p3','p1','p2')" id="p3" class="button">Réduire</a>
+</p>
+			  </div>
 
 
-<div style="text-align:center;padding:10px;border-top:1px solid white;">
+		  
+		  		  <div class="slider-wrapper" >
+<div class="titre-risque">CONNAISSANCE FINANCIÈRE</div>
+<input type="text" class="js-decimal4" />
 
-    <a href="compte2.html" style="width:100%" class="col button button-big button-fill color-blue">Valider</a>
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v4">0</div>
+          </div>
+		  
+		  
+		  
+		  		  <div class="slider-wrapper" >
+<div class="titre-risque">EXPÉRIENCE FINANCIÈRE</div>
+<input type="text" class="js-decimal5" />
+
+<div style="float:left;width:100%;text-align:center;padding:20px 10px;font-weight:bold;font-size:16px;" id="v5">0</div>
+          </div>
+
 </div>
-  </ul>
+
+
+    		  <div style="text-align:center;padding:40px;">
+
 </div>
-    
             </div>
           </div>
+		  
+		    </div> </div>
         </div>
 
       </div>
     </div>
     <!-- Path to Framework7 Library JS-->
-
-
-	  <script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/framework7.js"></script>
 	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
-				<script>
-$$(document).on('page:init', function (e, page) {
-  console.log(page);
+		<script>
+function actif(p1,p2,p3)
+{
+$('#'+p1).addClass('button-active');
+$('#'+p2).removeClass('button-active');
+$('#'+p3).removeClass('button-active');
+}
+	var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+ 
+var calendarDisabled = myApp.calendar({
+    input: '#calendar-default',
+    dateFormat: 'M dd yyyy',
+
 });
 
-
-
-
-
-
-
+$('#price-filter').on('range:change', function (e, range) {
+alert('rrrr');
+  //$$('.price-value').text('$'+(range.value[0])+' - $'+(range.value[1]));
+});
 
 	</script>
+	
+	  <script src="js/powerange.min.js"></script>
+  <script type="text/javascript">
+
+    // Basic customization.
+var dec = document.querySelector('.js-decimal');
+    var initDec = new Powerange(dec, { decimal: false, callback: displayDecimalValue, max: 4, start: 3 });
+
+
+    function displayDecimalValue() {
+      document.getElementById('v1').innerHTML = dec.value+'%';
+    }
+	
+	var dec2 = document.querySelector('.js-decimal2');
+    var initDec2 = new Powerange(dec2, { decimal: false, callback: displayDecimalValue2, max: 4, start: 2 });
+
+
+    function displayDecimalValue2() {
+      document.getElementById('v2').innerHTML = dec2.value+'%';
+    }
+	
+	
+	
+		var dec3 = document.querySelector('.js-decimal3');
+    var initDec3 = new Powerange(dec3, { decimal: false, callback: displayDecimalValue3, max: 4, start: 3 });
+
+
+    function displayDecimalValue3() {
+      document.getElementById('v3').innerHTML = dec3.value+'%';
+    }
+	
+	
+	
+		var dec4 = document.querySelector('.js-decimal4');
+    var initDec4 = new Powerange(dec4, { decimal: false, callback: displayDecimalValue4, max: 5, start: 0 });
+
+
+    function displayDecimalValue4() {
+      document.getElementById('v4').innerHTML = dec4.value;
+    }
+	
+	
+	
+		var dec5 = document.querySelector('.js-decimal5');
+    var initDec5 = new Powerange(dec5, { decimal: false, callback: displayDecimalValue5, max: 5, start: 0 });
+
+
+    function displayDecimalValue5() {
+      document.getElementById('v5').innerHTML = dec5.value;
+    }
+	
+	
+	
+
+  </script>
   </body>
 </html>

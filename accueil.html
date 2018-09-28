@@ -9,7 +9,7 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-
+	    <link rel="stylesheet" href="css/framework7.min.css">
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
 			  <link rel="stylesheet" href="css/demo.css" />
@@ -17,7 +17,6 @@
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-	
 	<style>
 	
 	
@@ -31,15 +30,6 @@
     border-radius: 16px !important;
 	}
 	
-	.kiko
-	{
-    left: 0 !important;
-    right: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: 47% !important;
-    text-align: center !important;
-	}
 	
 	.row
 	{
@@ -49,15 +39,7 @@
 	{
     width: 77% !important;
 	}
-	.bikox
-	{
-    padding: 4px 18px !important;
-    background: #ffffffd1 !important;
-    margin: 2% 0% 0% 2% !important;
-    border-radius: 7px !important;
-    width: 38% !important;
-    float: left !important;
-	}
+
 	
 	.content-block-title
 	{
@@ -101,7 +83,7 @@
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
-  <div style="width: 100px;margin-top: 60px;margin-left:auto;margin-right:auto;">
+  <div style="width: 120px;margin-top: 10px;margin-left:auto;margin-right:auto;">
 <img src="logo3.png" class="" style="
     width: 120px;
 ">
@@ -149,7 +131,7 @@
 						   
 						   
 						          <li>
-                              <a href = "compte55.html" onclick="myApp.closePanel();location.href='compte55.html'" class = "item-link item-content">
+                              <a href = "patrimoine.html" onclick="myApp.closePanel();" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/patrimoine.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -160,8 +142,33 @@
                               </a>
                            </li>
 						   
+						   <li>
+                              <a href = "risque.html" onclick="myApp.closePanel();location.href='risque.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/risk.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Appétit Risque</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
+						    <li>
+                              <a href = "budget-mensuel.html" onclick="myApp.closePanel();location.href='budget-mensuel.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/retraite.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Budget Retraite</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
 						   		          <li>
-                              <a href = "#" class = "item-link item-content">
+                              <a href = "stats.html" onclick="myApp.closePanel();location.href='stats.html'" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/bars.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -242,7 +249,7 @@
 <div class="col">
                                  <div style="width:100%" ><img src = "img/user_g.png" width = "100%">
 								 
-								       <div class="titreapp" >Mon Compte</div>
+							
 								 </div>
                                
                                  
@@ -252,7 +259,7 @@
                              </div> 
 </div>
 </div>
-
+	       <div class="titreapp" >Mon Compte</div>
 </div></a>
 
 <a href = "compte33.html" onclick="location.href='compte33.html'" class = "item-link"><div class="list-block bikox">
@@ -261,7 +268,7 @@
 <div class="col">
                                  <div style="width:100%" ><img src = "img/money_g.png" width = "100%"></div>
                                
-                                       <div class="titreapp" >Mes revenus</div>
+                                
                                  
                            
                           
@@ -269,40 +276,87 @@
 
 </div>
 </div>
-
+       <div class="titreapp" >Mes revenus</div>
 </div>  </a>
 
-<a href = "compte55.html" class = "item-link"><div class="list-block bikox">
+	
+<a class="item-link" href="patrimoine.html" ><div class="list-block bikox">
 <div class="block kiko">
 <div class="row">
 <div class="col">
                                  <div style="width:100%" ><img src = "img/patrimoine_g.png" width = "100%"></div>
                                
-                                       <div class="titreapp" >Patrimoine</div>
+                                  
                                  
                            
                           
                               </div>
 
 </div>
-</div></div>
+</div>
+     <div class="titreapp" >Patrimoine</div>
+</div>
 
 </a>
 
-<a href = "#" class = "item-link"><div class="list-block bikox">
+
+<a href = "risque.html" onclick="location.href='risque.html'" class = "item-link"><div class="list-block bikox">
 <div class="block kiko">
 <div class="row">
 <div class="col">
-                                 <div style="width:100%" ><img src = "img/bars_g.png" width = "100%"></div>
+                                 <div style="width:100%" ><img src = "img/risk.png" width = "100%"></div>
                                
-                                       <div class="titreapp" >Reporting</div>
+                                  
                                  
                            
                           
                          </div>
 
 </div>
-</div></div>
+</div>
+     <div class="titreapp" >Appétit Risque</div>
+</div>
+
+  </a>
+  
+  
+  <a href = "budget-mensuel.html" onclick="location.href='budget-mensuel.html'" class = "item-link"><div class="list-block bikox">
+<div class="block kiko">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/retraite.png" width = "100%"></div>
+                               
+                                  
+                                 
+                           
+                          
+                         </div>
+
+</div>
+</div>
+     <div class="titreapp" >Budget Retraite</div>
+</div>
+
+  </a>
+  
+  
+
+<a href = "stats.html" onclick="location.href='stats.html'" class = "item-link"><div class="list-block bikox">
+<div class="block kiko">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/bars_g.png" width = "100%"></div>
+                               
+                                  
+                                 
+                           
+                          
+                         </div>
+
+</div>
+</div>
+     <div class="titreapp" >Reporting</div>
+</div>
 
   </a>
 
@@ -311,32 +365,24 @@
 <div class="block kiko">
 <div class="row">
 <div class="col">
-                                 <div style="width:100%" ><img src = "img/info_g.png" width = "100%"></div>
-                               
-                                       <div class="titreapp" >A propos</div>
-                                 
-                           
-                          
-                              </div>
-
+<div style="width:100%" ><img src = "img/info_g.png" width = "100%"></div>
 </div>
-</div></div>
+</div>
+</div>
+ <div class="titreapp" >A propos</div>
+</div>
 </a>
 
 <a href = "conditions.html" class = "item-link"><div class="list-block bikox">
 <div class="block kiko">
 <div class="row">
 <div class="col">
-                                 <div style="width:100%" ><img src = "img/list_g.png" width = "100%"></div>
-                               
-                                       <div class="titreapp" >Conditions</div>
-                                 
-                           
-                          
-                       </div>
+<div style="width:100%" ><img src = "img/list_g.png" width = "100%"></div>
 
 </div>
 </div>
+</div>
+<div class="titreapp" >Conditions</div>
 </div>
      </a>
 
@@ -344,21 +390,18 @@
 <div class="block kiko">
 <div class="row">
 <div class="col">
-                                 <div style="width:100%" ><img src = "img/logout_g.png" width = "100%"></div>
-                               
-                                       <div class="titreapp" >Déconnexion</div>
-                                 
-                           
-                          
-                      </div>
-
-
+<div style="width:100%" ><img src = "img/logout_g.png" width = "100%"></div>
 </div>
 </div>
+</div>
+ <div class="titreapp" >Déconnexion</div>
 </div></a>
-    
+
+
             </div>
 
+			
+			
           </div>
 		  
 		  
@@ -367,14 +410,18 @@
       </div>
 	  
     </div>
+	
+	
     <!-- Path to Framework7 Library JS-->
 
-  <script type="text/javascript" src="js/framework7.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
 		<script>
+
+
 
 
 	var today = new Date();
@@ -424,8 +471,7 @@ var dec = document.querySelector('.js-decimal');
     }
 	
 	
-	
-	
+
 
   </script>
   </body>

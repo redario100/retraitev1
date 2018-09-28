@@ -11,8 +11,24 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
+function add(p)
+{
+document.getElementById("m1").contentEditable = "true";
+var m=$('#'+p).html();
+ var m2 = Number(m);
+$('#'+p).html(m2+1);
+}
 
 
+function sous(p)
+{
+var m=$('#'+p).html();
+ var m2 = Number(m);
+$('#'+p).html(m2-1);
+}
+
+	
+	
 
 function pip()
 {
