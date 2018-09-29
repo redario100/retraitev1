@@ -9,7 +9,7 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-
+	    <link rel="stylesheet" href="css/framework7.min.css">
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
 			  <link rel="stylesheet" href="css/demo.css" />
@@ -17,26 +17,32 @@
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
+	<style>
 	
 	
+	
+	</style>
   </head>
   <body>
+  
+
+  
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar-overlay"></div>
     <!-- Panels overlay-->
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
-  <div style="width: 100px;margin-top: 60px;margin-left:auto;margin-right:auto;">
+  <div style="width: 120px;margin-top: 10px;margin-left:auto;margin-right:auto;">
 <img src="logo3.png" class="" style="
-    width: 100px;
+    width: 120px;
 ">
 </div>
                      
                      <div class = "list-block media-list inset">
                         <ul>
                            <li>
-                              <a href = "accueil.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                              <a href = "#" onclick="myApp.closePanel()" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/menu.png" width = "25px"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -75,7 +81,7 @@
 						   
 						   
 						          <li>
-                              <a href = "compte55.html" onclick="myApp.closePanel();location.href='compte55.html'" class = "item-link item-content">
+                              <a href = "patrimoine.html" onclick="myApp.closePanel();" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/patrimoine.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -86,8 +92,33 @@
                               </a>
                            </li>
 						   
+						   <li>
+                              <a href = "risque.html" onclick="myApp.closePanel();location.href='risque.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/risk.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Appétit Risque</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
+						    <li>
+                              <a href = "budget-mensuel.html" onclick="myApp.closePanel();location.href='budget-mensuel.html'" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/retraite.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Budget Retraite</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
 						   		          <li>
-                              <a href = "#" class = "item-link item-content">
+                              <a href = "stats.html" onclick="myApp.closePanel();location.href='stats.html'" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/bars.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
@@ -144,17 +175,18 @@
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
+	  
         <!-- Top Navbar-->
         <div class="navbar">
 	
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-<div class="left" style="">
-<a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
+<div class="left">
+   <a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
 	  <div class="item-media"  ><i style="color:white;" class="icon f7-icons">left</i></div>
 <span class="ios-only" style="color:white">Back</span>
 </a>
-</div>
+            </div>
             <div style="font-weight:bold;" class="center sliding">COACH RETRAITE</div>
           
           </div>
@@ -164,34 +196,117 @@
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content">
-
-
-<div class="list-block mima">
-
-<div class="card">
-  <div class="card-header"> <div style="font-size:16px" class = "item-media"><img src = "img/info.png" width = "25">&nbsp;&nbsp;A Propos</div> </div>
-  <div style="font-size:14px;padding:10px;text-align:justify;" class="card-content card-content-padding">
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br><br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-  <br><br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br><br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-  </div>
-
+            <div style="margin-top: 10px;" class="page-content">
+			
+<a href = "#" onclick="$('#bgh').fadeIn()" class = "item-link"><div class="list-block bibox2">
+<div class="block kiko2">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/p1.jpg" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
 </div>
-
-
-
-
-
-
-
-
-
 </div>
+	       <div class="titreapp2" >Mon Compte ?</div>
+</div></a>
 
 
-    
+<a href = "#" onclick="$('#bgh').fadeIn()" class = "item-link"><div class="list-block bibox2">
+<div class="block kiko2">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/p2.jpg" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
+</div>
+</div>
+	       <div class="titreapp2" >Mes Revenus ?</div>
+</div></a>
+
+
+<a href = "#" onclick="$('#bgh').fadeIn()" class = "item-link"><div class="list-block bibox2">
+<div class="block kiko2">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/p3.jpg" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
+</div>
+</div>
+	       <div class="titreapp2" >Patrimoine Retraire ?</div>
+</div></a>
+
+
+<a href = "#" onclick="$('#bgh').fadeIn()" class = "item-link"><div class="list-block bibox2">
+<div class="block kiko2">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/p4.jpg" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
+</div>
+</div>
+	       <div class="titreapp2" >Appétit pour le risque ?</div>
+</div></a>
+
+
+<a href = "#" onclick="$('#bgh').fadeIn()" class = "item-link"><div class="list-block bibox2">
+<div class="block kiko2">
+<div class="row">
+<div class="col">
+                                 <div style="width:100%" ><img src = "img/p5.jpg" width = "100%">
+								 
+							
+								 </div>
+                               
+                                 
+                                 
+                           
+                          
+                             </div> 
+</div>
+</div>
+	       <div class="titreapp2" >Budget Retraite ?</div>
+</div></a>
+
+
+
+
+
+
+
             </div>
 
+			
+			
           </div>
 		  
 		  
@@ -200,14 +315,19 @@
       </div>
 	  
     </div>
+	
+	
     <!-- Path to Framework7 Library JS-->
 
-  <script type="text/javascript" src="js/framework7.js"></script>
-	
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>
 		<script>
+
+
+
 
 	var today = new Date();
 var weekLater = new Date().setDate(today.getDate() + 7);
@@ -256,8 +376,7 @@ var dec = document.querySelector('.js-decimal');
     }
 	
 	
-	
-	
+
 
   </script>
   </body>
