@@ -29,3 +29,8 @@
   font-feature-settings: "liga";
   text-align: center;
 }
+
+.left i.icon.f7-icons {
+    color: white !important;
+	    margin: 0px 8px -7px -3px !important;
+}

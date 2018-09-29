@@ -23,7 +23,10 @@ height: 100%;
 .bibox2
 {
     padding: 0px 0% 4% 0% !important;
-    background: #ffffff !important;
+ background: rgba(255, 255, 255, 0.8196078431372549) !important;
+ background-color: rgba(255, 255, 255, 0.8196078431372549) !important;
+ -webkit-background: rgba(255, 255, 255, 0.8196078431372549) !important;
+ -webkit-background-color: rgba(255, 255, 255, 0.8196078431372549) !important;
     margin: 2% 0% 0% 2% !important;
     border-radius: 3px !important;
     width: 95.5% !important;
@@ -33,7 +36,10 @@ height: 100%;
 		.bikox
 	{
 padding: 4% 3% !important;
-    background: #ffffffd1 !important;
+  background: rgba(255, 255, 255, 0.8196078431372549) !important;
+ background-color: rgba(255, 255, 255, 0.8196078431372549) !important;
+ -webkit-background: rgba(255, 255, 255, 0.8196078431372549) !important;
+ -webkit-background-color: rgba(255, 255, 255, 0.8196078431372549) !important;
     margin: 2% 0% 0% 2% !important;
     border-radius: 7px !important;
     width: 24.5% !important;
