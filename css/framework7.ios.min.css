@@ -15,10 +15,7 @@ height: 100%;
 	
 }
 
-.left i.icon.f7-icons {
-    color: white !important;
-	    margin: 0px 8px -7px -3px !important;
-}
+
 
 .bibox2
 {
@@ -166,6 +163,7 @@ fill: rgba(255, 255, 255, 0) !important;
 {
 	font-size:9px !important;
 	text-align:left !important;
+	width: 14% !important;
 }
 
 	
