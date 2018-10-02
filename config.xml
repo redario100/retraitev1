@@ -38,7 +38,7 @@
 
 <preference name="StatusBarBackgroundColor" value="#304596"/>
 
-<preference name="StatusBarStyle" value="blackopaque" />
+<preference name="StatusBarStyle" value="#304596" />
 
 	<!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
     <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->

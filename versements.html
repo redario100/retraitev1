@@ -9,7 +9,6 @@
     <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="css/framework7.ios.colors.css">
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-
 		    <link rel="stylesheet" href="css/framework7.ios.min.css">
 		    <link rel="stylesheet" href="css/framework7-icons.css">
 			  <link rel="stylesheet" href="css/demo.css" />
@@ -17,8 +16,7 @@
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
-	
-	
+
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -27,9 +25,9 @@
     <div class="panel-overlay"></div>
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
-  <div style="width: 100px;margin-top: 60px;margin-left:auto;margin-right:auto;">
+  <div style="width: 120px;margin-top: 10px;margin-left:auto;margin-right:auto;">
 <img src="logo3.png" class="" style="
-    width: 100px;
+    width: 120px;
 ">
 </div>
                      
@@ -182,13 +180,13 @@
 	
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-<div class="left" style="">
+				  <div class="left">
 <a href="#" onclick="location.href='myApp.addView('.view-main').router.refreshPreviousPage()'" class="link back">
 	  <div class="item-media"  ><i style="color:white;" class="icon f7-icons">left</i></div>
 <span class="ios-only" style="color:white">Retour</span>
 </a>
-</div>
-            <div style="font-weight:bold;" class="center sliding">COACH RETRAITE</div>
+            </div>
+            <div style="font-weight:bold;" class="center sliding">MES VERSEMENTS</div>
           
           </div>
         </div>
@@ -202,19 +200,52 @@
 
 <div class="list-block mima">
 
+<div style="width: 85px;margin-top: 20px;margin-left:auto;margin-right:auto;">
+<img src="logo.png" class="" style="
+    width: 85px;
+">
+</div>
+
 <div class="card">
-  <div class="card-header"> <div style="font-size:16px" class = "item-media"><img src = "img/info.png" width = "25">&nbsp;&nbsp;A Propos</div> </div>
-  <div style="font-size:14px;padding:10px;text-align:justify;" class="card-content card-content-padding">
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br><br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-  <br><br>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br><br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-  </div>
+  <div style="font-size:28px;padding:10px" class="card-content card-content-padding">
+  <div class="block">
+<div class="row">
+    <div style="width:30%" class="col">DISPOSITIFS</div>
+    <div class="tik" class="col">PER</div>
+    <div style="width:30%;text-align:right" class="col tik">PEE</div>
+  </div></div>
+  
+    <div class="block">
+<div class="row">
+    <div  style="width:30%" class="col">VERSEMENTS</div>
+    <div class="tik" class="col">3 050 €</div>
+    <div style="width:30%;text-align:right" class="col tik">500 €</div>
+  </div></div>
+  
+  <div class="list-block mima">
+  <ul>
+<li>
+  <div class="item-content">
+ 
+<div class="item-media"><i class="icon f7-icons">lock</i></div>
+<div class="item-inner">
+<div class="item-input">
+<input type="password" placeholder="Code signature électronique">
+</div>
+</div>
+
+</div></li></ul></div>
+
+  
+    
+  <div style="text-align:center;padding:10px;border-top:1px solid white;">
+
+    <a href="#" style="width:100%" class="col button button-big button-fill color-blue">Valider</a>
+</div>
 
 </div>
 
-
-
-
-
+</div>
 
 
 
@@ -224,10 +255,10 @@
 
     
             </div>
-
+					
+			
+			
           </div>
-		  
-		  
         </div>
 
       </div>
@@ -236,7 +267,7 @@
     <!-- Path to Framework7 Library JS-->
 
   <script type="text/javascript" src="js/framework7.js"></script>
-	
+
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
     <script type="text/javascript" src="js/my-app.js"></script>

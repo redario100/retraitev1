@@ -9,14 +9,27 @@ var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
 });
+function formatMillier2(nombre){
+  nombre += '';
+  var sep = ' ';
+  var reg = /(\d+)(\d{3})/;
+  while( reg.test( nombre)) {
+    nombre = nombre.replace( reg, '$1' +sep +'$2');
+  }
+  return nombre;
+}
 
+function myTrim(x) {
+    return x.replace(/\s/g, '');
+}
 
 function add(p)
 {
 document.getElementById("m1").contentEditable = "true";
 var m=$('#'+p).html();
- var m2 = Number(m);
-$('#'+p).html(m2+1);
+var m0=myTrim(m);
+var m2 = Number(m0);
+$('#'+p).html(formatMillier2(m2+1));
 }
 
 

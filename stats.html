@@ -11,13 +11,11 @@
     <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
 	    <link rel="stylesheet" href="css/framework7.min.css">
 			    <link rel="stylesheet" href="css/framework7.ios.min.css">
-
-
 		    <link rel="stylesheet" href="css/framework7-icons.css">
 			  <link rel="stylesheet" href="css/demo.css" />
   <link rel="stylesheet" href="css/powerange.css" />
 	<style>
-#curve_chart{
+#curve_chart, #curve_chart2{
    zoom:1.5;
    width:130% !important;
    height:20% !important;
@@ -42,45 +40,7 @@ text {
     <link rel="stylesheet" href="css/my-app.css">
 	
 	
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Date', '%'],
-          ['2017',  20],
-          ['2019',  25],
-          ['2021',  30],
-          ['2023',  35],
-		  ['2025',  40],
-		  ['2027',  40],
-		    ['2029',  50],
-			
-			  ['2031',  60],
-			  
-			    ['2033',  65],
-				
-				  ['2035',  65],
-				  
-				    ['2037',  70],
-					
-					  ['2039',  80],
-					  
-					  ['2041',  100],
-        ]);
-
-        var options = {
-          title: '',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
+	
     </script>
 	
 	
@@ -112,26 +72,16 @@ text {
                               </a>
                            </li>
                            
-                           <li>
-                              <a href = "myaccount.html" onclick="myApp.closePanel()" class = "item-link item-content">
-                                 <div class = "item-media"><img src = "img/user.png" width = "25px"></div>
-                                 <div class = "item-inner">
-                                    <div class = "item-title-row">
-                                       <div class = "item-title">Mon Compte</div>
-                                    </div>
-                           
-                                 </div>
-                              </a>
-                           </li>
+                  
                            
                           
 						   
 						          <li>
-                              <a href = "compte33.html" onclick="myApp.closePanel();location.href='compte33.html'" class = "item-link item-content">
-                                 <div class = "item-media"><img src = "img/money.png" width = "25"></div>
+                              <a href = "compte4.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/id.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">Mes revenus</div>
+                                       <div class = "item-title">Côtisations</div>
                                     </div>
                            
                                  </div>
@@ -139,24 +89,25 @@ text {
                            </li>
 						   
 						   
-						          <li>
+						   
+						             <li>
                               <a href = "patrimoine.html" onclick="myApp.closePanel();" class = "item-link item-content">
-                                 <div class = "item-media"><img src = "img/patrimoine.png" width = "25"></div>
+                                 <div class = "item-media"><img src = "img/dispo.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">Gestion Patrimoine</div>
+                                       <div class = "item-title">Dispositifs</div>
                                     </div>
                            
                                  </div>
                               </a>
                            </li>
 						   
-						   <li>
-                              <a href = "risque.html" onclick="myApp.closePanel();location.href='risque.html'" class = "item-link item-content">
-                                 <div class = "item-media"><img src = "img/risk.png" width = "25"></div>
+						   	             <li>
+                              <a href = "choix.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/insurance.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">Appétit Risque</div>
+                                       <div class = "item-title">Projets de vie</div>
                                     </div>
                            
                                  </div>
@@ -164,36 +115,53 @@ text {
                            </li>
 						   
 						   
-						    <li>
-                              <a href = "budget-mensuel.html" onclick="myApp.closePanel();location.href='budget-mensuel.html'" class = "item-link item-content">
-                                 <div class = "item-media"><img src = "img/retraite.png" width = "25"></div>
-                                 <div class = "item-inner">
-                                    <div class = "item-title-row">
-                                       <div class = "item-title">Budget Retraite</div>
-                                    </div>
-                           
-                                 </div>
-                              </a>
-                           </li>
-						   
-						   		          <li>
+						   	          <li>
                               <a href = "stats.html" onclick="myApp.closePanel();location.href='stats.html'" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/bars.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">Reporting</div>
+                                       <div class = "item-title">Simulations</div>
                                     </div>
                            
                                  </div>
                               </a>
                            </li>
 						   
+						 	   	          <li>
+                              <a href = "versements.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/wallet.png" width = "25"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Versements</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
+						   <div class="lin0"></div>
+						   	
+						   
+						            <li>
+                              <a href = "myaccount.html" onclick="myApp.closePanel()" class = "item-link item-content">
+                                 <div class = "item-media"><img src = "img/user.png" width = "25px"></div>
+                                 <div class = "item-inner">
+                                    <div class = "item-title-row">
+                                       <div class = "item-title">Mon Profil</div>
+                                    </div>
+                           
+                                 </div>
+                              </a>
+                           </li>
+						   
+						   
 						   <li>
-                              <a href = "apropos.html" onclick="myApp.closePanel();" class = "item-link item-content">
+                              <a href = "help.html" onclick="myApp.closePanel();" class = "item-link item-content">
                                  <div class = "item-media"><img src = "img/info.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">A Propos</div>
+                                       <div class = "item-title">Aide</div>
                                     </div>
                            
                                  </div>
@@ -205,7 +173,7 @@ text {
                                  <div class = "item-media"><img src = "img/list.png" width = "25"></div>
                                  <div class = "item-inner">
                                     <div class = "item-title-row">
-                                       <div class = "item-title">Conditions générales</div>
+                                       <div class = "item-title">Mentions légales</div>
                                     </div>
                            
                                  </div>
@@ -242,7 +210,7 @@ text {
 <div class="left" style="">
 <a href = "accueil.html" class="link back">
 	  <div class="item-media"  ><i style="color:white;" class="icon f7-icons">left</i></div>
-<span class="ios-only" style="color:white">Back</span>
+<span class="ios-only" style="color:white">Retour</span>
 </a>
 </div>
             <div style="font-weight:bold;" class="center sliding">COACH RETRAITE</div>
@@ -256,21 +224,234 @@ text {
             <!-- Scrollable page content-->
 <div class="page-content">
 <div class="list-block mima">
-
-<div class="card">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div style="padding-bottom: 20px;" class="card">
 <div class="card-header"> <div style="font-size:13px" class = "item-media">ALLOCATION D’ACTIFS RETRAITE</div> </div>
-<div style="font-size:14px;padding:10px;text-align:justify;" class="card-content card-content-padding">
-<div style="text-align:center;margin-top:-33px;margin-left: -15px;border-top:1px solid white;">
-  <div class="col-md-6">
-<div id="curve_chart" ></div>
+<div style="
+    float: left;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 4px 5px;
+    font-weight: bold;
+    z-index: 99999999999999;
+    position: absolute;
+    display: block;
+">100%</div>
+<div style="font-size:14px;padding:10px;text-align:justify;border-left: 1px solid silver;margin: 3% 4%;border-bottom: 1px solid silver;" class="card-content card-content-padding">
+<div style="text-align:center;margin-top:0px;margin-left: -15px;border-top:1px solid white;">
+  <div class="col-md-6" style="
+    /* margin: 0; */
+    /* padding: 0; */
+">
+<div style="font-size:14px;padding: 0 13px;text-align:justify;" class="card-content card-content-padding">
+
+
+		  
+		  
+<div style="text-align:center;padding:10px;border-top:1px solid white;">
+
+
+
+<div class="block" style="
+    height: 270px;
+    top: 170px;
+    /* position: absolute; */
+">
+ <div class="row">
+ 
+ 
+  <div style="background: #576fcb;width: 20px;height: 60px;margin-top: 40px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 220px;margin-top: -220px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+   <div style="background: #576fcb;width: 20px;height: 80px;margin-top: 20px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 200px;margin-top: -200px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+   <div style="background: #576fcb;width: 20px;height: 100px;margin-top: 0;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 180px;margin-top: -180px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+   <div style="background: #576fcb;width: 20px;height: 140px;margin-top: -40px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 140px;margin-top: -140px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+   <div style="background: #576fcb;width: 20px;height: 180px;margin-top: -80px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 100px;margin-top: -100px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+   <div style="background: #576fcb;width: 20px;height: 219px;margin-top: -119px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 63px;margin-top: -63px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+     <div style="background: #576fcb;width: 20px;height: 250px;margin-top: -150px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 32px;margin-top: -32px;background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+     <div style="background: #576fcb;width: 20px;height: 282px;margin-top: -182px;" class="col"><span style="display: block;font-size: 11px;color: white;font-weight: bold;margin-top: 93px;position: absolute;"></span><div style="float:left;width: 20px;height: 0;/* margin-top: 0px; *//* margin-top: 32px; */background: #e34848;"><span style="color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;"></span></div></div>
+  
+  </div>
+  
+  </div>
+  
+  
+
+  
+ 
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="block" style="
+    padding: 1px 37px 0px 12px;
+">
+ <div class="row">
+    <div class="pom2 col"> 31/12/2017</div>
+  <div class="pom2 col">&nbsp;</div>
+    <div class="pom2 col">&nbsp;</div>
+	  <div class="pom2 col">&nbsp;</div>
+	    <div class="pom2 col">&nbsp;</div>
+		  <div class="pom2 col">&nbsp;</div>
+		    <div class="pom2 col">&nbsp;</div>
+			  <div class="pom2 col">RETRAITE<br>31/12/2041
+</div>
+</div>
+  
+  </div>
+
 </div></div>
-		  <div style="text-align:center;padding:10px;">
-<a href="stats2.html" onclick="location.href='stats2.html'" style="width: 94%;margin: 3%;font-size: 12px;" class="col button button-big button-fill color-blue">ALLOCATION D’ACTIFS RETRAITE</a>
+
+<div class="swiper-slide">
+<div style="padding-bottom: 20px;" class="card">
+<div class="card-header"> <div style="font-size:13px" class = "item-media">ALLOCATION D’ACTIFS RETRAITE</div> </div>
+<div style="
+    float: left;
+    font-size: 12px;
+    background: #ffffff;
+    padding: 4px 5px;
+    font-weight: bold;
+    z-index: 99999999999999;
+    position: absolute;
+    display: block;
+    margin-top: 238px;
+    margin-left: 4px;
+    border-bottom: 1px solid silver;
+">17 500€</div>
+<div style="font-size:14px;padding:10px;text-align:justify;border-left: 1px solid silver;margin: 3% 4%;border-bottom: 1px solid silver;" class="card-content card-content-padding">
+<div style="text-align:center;margin-top:0px;margin-left: -15px;border-top:1px solid white;">
+  <div class="col-md-6" style="
+    /* margin: 0; */
+    /* padding: 0; */
+">
+<div style="font-size:14px;padding: 0 13px;text-align:justify;" class="card-content card-content-padding">
+
+
+		  
+		  
+<div style="text-align:center;padding:10px;border-top:1px solid white;">
+
+
+
+<div class="block" style="
+    height: 270px;
+    top: 170px;
+    /* position: absolute; */
+">
+<div class="row">
+ 
+ 
+  <div style="" class="col"></div>
+    <div style="" class="col"></div>
+	  <div style="" class="col"></div>
+	    <div style="" class="col">
+    <div style="float:left;background: #31c925;width:40px;height:40px;line-height: 40px;margin-top: -163px;border-radius:100px;font-weight:bold;text-align:center;color:white;">40%</div>
+      <div style="float:left;background: #2a79d6;width:40px;line-height: 40px;margin-top: -105px;margin-left: 5px;height:40px;font-weight:bold;border-radius:100px;text-align:center;color:white;">50%</div>
+    
+      <div style="float:left;background: #de3a3a;width:40px;line-height: 40px;height:40px;margin-left: 1px;margin-top: -44px;font-weight:bold;border-radius:100px;text-align:center;color:white;">95%</div>
+</div>
+
+  </div>
+  
+  </div>
+  
+  
+
+  
+ 
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="block" style="
+    padding: 1px 37px 0px 12px;
+">
+ <div class="row">
+    <div class="pom2 col"> 31/12/2017</div>
+  <div class="pom2 col">&nbsp;</div>
+    <div class="pom2 col">&nbsp;</div>
+	  <div class="pom2 col">&nbsp;</div>
+	    <div class="pom2 col">&nbsp;</div>
+		  <div class="pom2 col">&nbsp;</div>
+		    <div class="pom2 col">&nbsp;</div>
+			  <div class="pom2 col">31/12/2041
+</div>
+</div>
+  
+  </div>
+
 
 </div>
 </div>
 
 
+<div class="swiper-slide">
+<div class="card">
+<div class="card-header"> <div style="font-size:13px" class = "item-media">PROJET : RETRAITE</div> </div>
+<div style="font-size:14px;padding:10px;text-align:justify;" class="card-content card-content-padding">
+
+
+		  
+		  
+<div style="text-align:center;padding:10px;border-top:1px solid white;">
+
+
+
+<div class="block" style="
+    height: 270px;
+    top: 170px;
+    /* position: absolute; */
+">
+ <div class="row">
+    <div style="background: #24b820;width: 32px;padding-top: 42px;text-align: center;height:100px;color: white;font-weight: bold;font-size: 10px;" class="col">2300€</div>
+    <div style="background: #24b820;width: 32px;height: 60px;margin-top: -58px;font-size: 11px;font-weight: bold;padding-top: 23px;padding-top: 50p;color: white;" class="col">200€</div>
+    <div style="background: #e34848;width: 32px;height: 120px;padding-top: 50px;color: white;margin-top: -180px;font-size: 11px;font-weight: bold;" class="col">120€</div>
+    <div style="background: #576fcb;width: 32px;color: white;font-size: 11px;height: 282px;padding-top: 125px;font-weight: bold;margin-top: -182px;" class="col">2600€</div>
+    <div style="background: #576fcb;width: 32px;height: 219px;margin-top: -119px;" class="col"><span style="
+    display: block;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    margin-top: 93px;
+    position: absolute;
+">2200€</span><div style="float:left;width: 32px;height: 63px;margin-top: -63px;background: #e34848;/* margin-top: -5px; */"><span style="/* position:absolute; */color:white;font-weight:bold;margin-top: 25px;font-size:11px;display: block;">500€</span></div></div>
+  </div>
+  
+  </div>
+  
+  
+  <div class="block">
+ <div class="row">
+    <div class="pom col">RETRAITE <br>LÉGALE</div>
+	  <div class="pom col">RENTE <br>GARANTIE</div>
+	    <div class="pom col">BESOIN <br>ÉPARGNE</div>
+		  <div class="pom col">RETRAITE</div>
+		    <div class="pom col">REVERSION <br>EN CAS<br> DE DÉCÈS</div>
+</div>
+  
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="swiper-pagination"></div>
+</div>
+
+</div>
+
+
 
 </div>
 
@@ -280,7 +461,15 @@ text {
 </div>
 </div>
 </div>
-    <!-- Path to Framework7 Library JS-->
+ <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 
   <script type="text/javascript" src="js/framework7.js"></script>
 

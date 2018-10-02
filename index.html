@@ -15,6 +15,7 @@
 	
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
+	<link rel="stylesheet" href="http://idangero.us/swiper/dist/css/swiper.min.css">
 
   </head>
   <body>
@@ -58,15 +59,13 @@
 
 
 <div class="list-block mima">
-
- <div class="content-block-title boldx">Connexion</div>
   <ul>
   
     <li>
       <div class="item-content">
         <div class="item-media"><i class="icon f7-icons">person</i></div>
         <div class="item-inner">
-          <div class="item-title label">Login</div>
+        
           <div class="item-input">
             <input type="text" placeholder="Login">
           </div>
@@ -77,7 +76,6 @@
 <div class="item-content">
 <div class="item-media"><i class="icon f7-icons">lock</i></div>
 <div class="item-inner">
-<div class="item-title label">Password</div>
 <div class="item-input">
 <input type="password" placeholder="Password">
 </div>
@@ -85,10 +83,10 @@
 </div>
 </li>
 
-<p class="buttons-row theme-blue">
-    <a href="accueil.html" onclick="location.href='accueil.html'" class="button">Se Connecter</a>
-    <a href="compte.html" class="button">Créer un compte</a>
-</p>
+
+    <a href="accueil.html" style="margin:6% 5% 3% 5%" onclick="location.href='accueil.html'" class="button">Se Connecter</a>
+    <a href="compte.html" style="margin:0% 5% 3% 5%" class="button">Créer un compte</a>
+
   </ul>
 </div>
     
@@ -98,7 +96,15 @@
 
       </div>
     </div>
-    <!-- Path to Framework7 Library JS-->
+ <script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 	    <script type="text/javascript" src="js/framework7.js"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
